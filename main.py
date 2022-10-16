@@ -1,3 +1,4 @@
+from smtplib import SMTP
 from typing import TextIO
 import smtplib
 
@@ -6,7 +7,9 @@ from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-port = 2525
+
+
+port = 587
 smtp_server = "smtp.gmail.com"
 login = "It20021634@#"
 password = "It20021634@#"
@@ -40,12 +43,18 @@ part.add_header(
 message.attach(part)
 text = message.as_string()
 
-with smtplib.SMTP("smtp.gmail.com", 2525) as server:
+with smtplib.SMTP("smtp.gmail.com", 587) as server:
+    server.connect("smtp.gmail.com", 587)
+    server.ehlo()
+    server.starttls()
+    server.ehlo()
     server.login(login, password)
     server.sendmail(
         sender_email, receiver_email, text
     )
+    server.quit()
 print("send the email")
+gghjgg
 
 # from email.mime.multipart import MIMEMultipart
 # from email.mime.txt import MIMEText
