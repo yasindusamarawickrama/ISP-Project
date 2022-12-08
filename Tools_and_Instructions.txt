@@ -1,0 +1,13 @@
+There are tools need to install from internet 
+1. python latest version
+2. nssm installer
+3. relevent python modules
+    1.PIP
+    2.Pillow
+    3.numpy
+    4.pynput
+    5.pywin32
+    6.scipy
+    7.sounddevices
+4. senders and recievers email should be change as you want in python code according to your organization.
+5. log and other files locations should be change as you want in the python code. 
