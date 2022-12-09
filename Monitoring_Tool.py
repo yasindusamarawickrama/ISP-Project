@@ -26,7 +26,7 @@ number_of_iterations_end = 20
 
 toaddr = "ysudhara99@gmail.com"
 
-file_path = "C:\\Users\\ysudh\\PycharmProjects\\pythonProject"
+file_path = "C:\\Users\\ysudh\\Resources"
 extend = "\\"
 
 
