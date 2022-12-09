@@ -1,0 +1,1 @@
+Go to installer and then win64. In this folder have file named Monitoring_Tool.bat and run it with administration permission.
